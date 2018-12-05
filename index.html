@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <title>Java API Dashboard</title>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-2">
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <p>Java API Dashboard</p>
+                </div>
+                <ul class="nav nav-pills flex-column">
+                    <!-- menu added by jquery -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="container">
+            <table class="table data-table device-info">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="ledController" style="display: none;">
+                <!-- <a class="ledOn" href="#" data-led="on">Led on</a> <br/>
+                <a class="ledOff" href="#" data-led="off">Led off</a> -->
+
+                <p class="float-left">Off</p>
+                <!-- Rounded switch -->
+                <label class="switch float-left">
+                    <input type="checkbox" class="ledCheckbox">
+                    <span class="slider round"></span>
+                </label>
+
+                <p class="float-left">On</p>
+            </div>
+            <br/>
+            <table class="table data-table all-results" style="display: none;">
+                <thead>
+                    <tr>
+                        <th scope="col">time</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="container">
+            <p>Gegevens van het laatste uur:</p>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+  
+</div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="assets/js/api.js"></script>
+</html>
